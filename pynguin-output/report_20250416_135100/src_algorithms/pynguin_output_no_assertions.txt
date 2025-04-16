@@ -1,0 +1,32 @@
+[13:51:02] ERROR    Failed to load SUT: No module named 'src'                         generator.py:175
+                    ╭────────────── Traceback (most recent call last) ──────────────╮                 
+                    │ /home/dumi/Documents/Facultate/SSVV/Seminar4SSVV/venv/lib/pyt │                 
+                    │ hon3.10/site-packages/pynguin/generator.py:171 in _load_sut   │                 
+                    │                                                               │                 
+                    │   168 │   try:                                                │                 
+                    │   169 │   │   # We need to set the current thread ident so th │                 
+                    │   170 │   │   tracer.current_thread_identifier = threading.cu │                 
+                    │ ❱ 171 │   │   importlib.import_module(config.configuration.mo │                 
+                    │   172 │   except ImportError as ex:                           │                 
+                    │   173 │   │   # A module could not be imported because some d │                 
+                    │   174 │   │   # are missing or it is malformed                │                 
+                    │                                                               │                 
+                    │ /home/dumi/.pyenv/versions/3.10.13/lib/python3.10/importlib/_ │                 
+                    │ _init__.py:126 in import_module                               │                 
+                    │                                                               │                 
+                    │   123 │   │   │   if character != '.':                        │                 
+                    │   124 │   │   │   │   break                                   │                 
+                    │   125 │   │   │   level += 1                                  │                 
+                    │ ❱ 126 │   return _bootstrap._gcd_import(name[level:], package │                 
+                    │   127                                                         │                 
+                    │   128                                                         │                 
+                    │   129 _RELOADING = {}                                         │                 
+                    │ in _gcd_import:1050                                           │                 
+                    │ in _find_and_load:1027                                        │                 
+                    │ in _find_and_load_unlocked:992                                │                 
+                    │ in _call_with_frames_removed:241                              │                 
+                    │ in _gcd_import:1050                                           │                 
+                    │ in _find_and_load:1027                                        │                 
+                    │ in _find_and_load_unlocked:1004                               │                 
+                    ╰───────────────────────────────────────────────────────────────╯                 
+                    ModuleNotFoundError: No module named 'src'                                        
